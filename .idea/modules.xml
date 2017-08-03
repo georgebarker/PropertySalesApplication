@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PropertySalesApplication.iml" filepath="$PROJECT_DIR$/.idea/modules/PropertySalesApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PropertySalesApplication_main.iml" filepath="$PROJECT_DIR$/.idea/modules/PropertySalesApplication_main.iml" group="PropertySalesApplication" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PropertySalesApplication_test.iml" filepath="$PROJECT_DIR$/.idea/modules/PropertySalesApplication_test.iml" group="PropertySalesApplication" />
+    </modules>
+  </component>
+</project>

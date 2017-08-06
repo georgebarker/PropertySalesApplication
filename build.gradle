@@ -3,12 +3,34 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
-sourceCompatibility = 1.5
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    compile 'org.xerial:sqlite-jdbc:3.19.3'
+    compile 'joda-time:joda-time:2.9.9'
     testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'org.mockito:mockito-core:2.8.47'
 }
+
+apply plugin: 'eclipse'
+
+eclipse {
+    classpath {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
+
+apply plugin: 'idea'
+
+idea {
+    module {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="database.PropertySalesDatabaseTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-09-27T17:40:16" hostname="Georges-MBP" time="0.014">
+  <properties/>
+  <testcase name="testDatabaseSchemaIsCreated" classname="database.PropertySalesDatabaseTest" time="0.006"/>
+  <testcase name="testIReturnAValidResultWhenQueried" classname="database.PropertySalesDatabaseTest" time="0.006"/>
+  <testcase name="testICreateADatabaseWhenOneDoesntAlreadyExist" classname="database.PropertySalesDatabaseTest" time="0.002"/>
+  <testcase name="testIDoNotCreateANewDatabaseFileWhenOneAlreadyExists" classname="database.PropertySalesDatabaseTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module relativePaths="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output/>
+    <orderEntry type="inheritedJdk"/>
+    <content url="file://$MODULE_DIR$/">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false"/>
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false"/>
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true"/>
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true"/>
+      <excludeFolder url="file://$MODULE_DIR$/build"/>
+      <excludeFolder url="file://$MODULE_DIR$/.gradle"/>
+    </content>
+    <orderEntry type="sourceFolder" forTests="false"/>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/org.xerial/sqlite-jdbc/3.19.3/99822df244c5bbc300bef5c633550586b8e01316/sqlite-jdbc-3.19.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/org.xerial/sqlite-jdbc/3.19.3/f6568702b5f09fa1d7f89d29f99bea09f2b1c3fe/sqlite-jdbc-3.19.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/org.xerial/sqlite-jdbc/3.19.3/f8f89ec8898a91dc69899ae447cefa9a1c5258c5/sqlite-jdbc-3.19.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.9/f7b520c458572890807d143670c9b24f4de90897/joda-time-2.9.9.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.9/bc84c376eb7a32276f94297bc936b5078f243787/joda-time-2.9.9-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.9/29a9fcf32288cd678b37b372974786f731b982d1/joda-time-2.9.9-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.8.47/48840cfced22ec0c07203a0201c5ae7bc12557b5/mockito-core-2.8.47.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.8.47/c8dabf459eab9863eb9706ae93fca0258550bb7/mockito-core-2.8.47-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.8.47/95325a034a187d7964cff5dfc90cef6c363c265e/mockito-core-2.8.47-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.6.14/871c3e49dc6183d0d361601c2f1d11abb1a6b48c/byte-buddy-1.6.14.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.6.14/fc8ead48008a3e7dc69d60f7ec516fa50c751724/byte-buddy-1.6.14-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.6.14/59f185ca98044661e587f1685c59dae22a49e1cc/byte-buddy-1.6.14-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.6.14/ba1e5ba3a84fb2fbf2f4de9138df19665eec4d59/byte-buddy-agent-1.6.14.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.6.14/f736d5ec4f32829a6b5a6b3ac77ae0013dccf7c0/byte-buddy-agent-1.6.14-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.6.14/75649a0d922bc4efb65bd60a734ee38b64d54231/byte-buddy-agent-1.6.14-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.5/612ecb799912ccf77cba9b3ed8c813da086076e9/objenesis-2.5.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.5/c432deafe7185b31b8d371b9062b7fa9dc8d48aa/objenesis-2.5-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.5/e2b450699731118d1498645e36577371afced20f/objenesis-2.5-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/f3289e8097c0013b711d058b563064c3bded4423/junit-4.11-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar!/"/>
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/ad09811315f1d4f5756986575b0ea16b99cd686f/hamcrest-core-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar:///Users/georgebarker/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+  <component name="ModuleRootManager"/>
+</module>

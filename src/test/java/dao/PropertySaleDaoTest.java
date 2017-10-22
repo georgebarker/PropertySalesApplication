@@ -15,7 +15,6 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.text.ParseException;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -82,12 +81,9 @@ public class PropertySaleDaoTest {
     private ResultSet providedResultSet;
 
     @InjectMocks
-    private PropertySaleDao propertySaleDao;
+    private PropertySalesDao propertySaleDao;
 
     private List<PropertySale> returnedPropertySales;
-
-    public PropertySaleDaoTest() throws ParseException {
-    }
 
     @Test
     public void testICanFindPropertySalesByPostcode() throws SQLException {

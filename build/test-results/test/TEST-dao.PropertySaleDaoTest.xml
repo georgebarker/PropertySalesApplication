@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dao.PropertySaleDaoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-23T19:53:53" hostname="Georges-MBP" time="0.011">
+<testsuite name="dao.PropertySaleDaoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-23T21:59:14" hostname="Georges-MBP" time="0.018">
   <properties/>
-  <testcase name="testQuotesAreStripped" classname="dao.PropertySaleDaoTest" time="0.008"/>
-  <testcase name="testICanFindPropertySalesByPostcode" classname="dao.PropertySaleDaoTest" time="0.002"/>
+  <testcase name="testQuotesAreStripped" classname="dao.PropertySaleDaoTest" time="0.01"/>
+  <testcase name="testICanFindPropertySalesByPostcode" classname="dao.PropertySaleDaoTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

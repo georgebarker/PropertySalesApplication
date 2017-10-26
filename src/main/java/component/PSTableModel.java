@@ -54,7 +54,7 @@ public class PSTableModel extends AbstractTableModel {
 		switch (columnIndex) {
 		case 0:
 			return propertySale.getPrimaryAddressableObjectName() + " "
-					+ propertySale.getSecondaryAddressableObjectName();
+					+ propertySale.getSecondaryAddressableObjectName() + " " + propertySale.getStreet();
 		case 1:
 			return propertySale.getPrice();
 		case 2:
@@ -70,6 +70,9 @@ public class PSTableModel extends AbstractTableModel {
 		return columnNames[column];
 	}
 	
+	public PropertySale getModelFromRow(int selectedRowIndex) {
+		return propertySales.get(selectedRowIndex);
+	}
 	public void updateModel(List<PropertySale> propertySales) {
 		this.propertySales = propertySales;
 	}

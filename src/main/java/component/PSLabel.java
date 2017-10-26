@@ -9,6 +9,10 @@ public class PSLabel extends JLabel {
 		setLocation(x, y);
 	}
 	
+	public PSLabel(int x, int y) {
+		setLocation(x, y);
+	}
+	
 	@Override
 	public void setText(String text) {
 		super.setText(text);

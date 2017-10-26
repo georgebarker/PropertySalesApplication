@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.swing.JTextField;
 
+import component.PSAddressInformation;
 import component.PSTableModel;
 import model.PropertySale;
 import service.PropertySalesService;
@@ -14,6 +15,7 @@ public class PostcodeSearchButtonClickedListener implements ActionListener {
 	JTextField textField;
 	PSTableModel model;
 	PropertySalesService service;
+	PSAddressInformation addressInformation;
 	
 	public PostcodeSearchButtonClickedListener(JTextField textField, PSTableModel model, PropertySalesService service) {
 		this.textField = textField;

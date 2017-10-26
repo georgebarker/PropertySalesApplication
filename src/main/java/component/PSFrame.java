@@ -16,7 +16,7 @@ public class PSFrame extends JFrame {
 			add(component);
 		}
 		setResizable(false);
-		setLocationRelativeTo(null); //centralizes frame on screen
+		setLocationRelativeTo(null); //centralises frame on screen
 		setVisible(true);
 		
 	}

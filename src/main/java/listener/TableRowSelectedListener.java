@@ -20,10 +20,16 @@ public class TableRowSelectedListener implements ListSelectionListener {
 
 	@Override
 	public void valueChanged(ListSelectionEvent e) {
-		PSTableModel model = (PSTableModel) table.getModel();		
-		int selectedRowIndex = table.convertRowIndexToModel(table.getSelectedRow());
-		PropertySale propertySale = model.getModelFromRow(selectedRowIndex);
-		addressInformation.setAddressInformation(propertySale);
+		int selectedRow = table.getSelectedRow();
+		if (selectedRow != -1) {
+			addressInformation.setNoPropertySelectedLabelVisibility(false);
+			PSTableModel model = (PSTableModel) table.getModel();
+			int selectedRowIndex = table.convertRowIndexToModel(selectedRow);
+			PropertySale propertySale = model.getModelFromRow(selectedRowIndex);
+			addressInformation.setAddressInformation(propertySale);
+		} else {
+			addressInformation.setNoPropertySelectedLabelVisibility(true);
+		}
 	}
 
 }

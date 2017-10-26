@@ -2,6 +2,8 @@ package component;
 
 import javax.swing.JLabel;
 
+import org.apache.commons.text.WordUtils;
+
 public class PSLabel extends JLabel {
 
 	public PSLabel(String text, int x, int y) {
@@ -16,6 +18,11 @@ public class PSLabel extends JLabel {
 	@Override
 	public void setText(String text) {
 		super.setText(text);
+		setSize(getPreferredSize());
+	}
+	
+	public void setTextCapitalise(String text) {
+		super.setText(WordUtils.capitalize(text.toLowerCase()));
 		setSize(getPreferredSize());
 	}
 }

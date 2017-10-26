@@ -186,3 +186,6 @@ local.properties
 .worksheet
 /.gradle/
 /build/
+
+build/
+.gradle/

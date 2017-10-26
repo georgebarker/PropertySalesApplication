@@ -16,8 +16,9 @@ public class PostcodeSearchButtonClickedListener implements ActionListener {
 	PSTableModel model;
 	PropertySalesService service;
 	PSAddressInformation addressInformation;
-	
-	public PostcodeSearchButtonClickedListener(JTextField textField, PSTableModel model, PropertySalesService service) {
+
+	public PostcodeSearchButtonClickedListener(JTextField textField, PSTableModel model,
+			PropertySalesService service) {
 		this.textField = textField;
 		this.model = model;
 		this.service = service;
@@ -25,9 +26,11 @@ public class PostcodeSearchButtonClickedListener implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		List<PropertySale> propertySales = service.getPropertySalesByPostcode(textField.getText());
-		model.updateModel(propertySales);
-		model.fireTableDataChanged();
+		String text = textField.getText();
+		if (!text.isEmpty()) {
+			List<PropertySale> propertySales = service.getPropertySalesByPostcode(text);
+			model.updateModel(propertySales);
+			model.fireTableDataChanged();
+		}
 	}
-
 }

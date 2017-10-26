@@ -10,6 +10,6 @@ public class DateTimeTableCellRenderer extends DefaultTableCellRenderer {
 	@Override
 	protected void setValue(Object value) {
 		DateTime dateTime = (DateTime) value;
-		super.setValue(dateTime.toString(DateTimeFormat.mediumDate()));
+		super.setValue(dateTime.toString(DateTimeFormat.forPattern("dd MMMM yyyy")));
 	}
 }

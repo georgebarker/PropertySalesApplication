@@ -40,7 +40,7 @@ public class MainViewController {
 		JTable table = new PSTable(model);		
 		JScrollPane scrollPane = new PSScrollPane(table, new Rectangle(500, 22, 500, 500));
 		
-		PSAddressInformation addressInformation = new PSAddressInformation(20, 80);
+		PSAddressInformation addressInformation = new PSAddressInformation(20, 50);
 		
 		table.getSelectionModel().addListSelectionListener(new TableRowSelectedListener(table, addressInformation));
 		

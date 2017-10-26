@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="database.PropertySalesDatabaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-26T22:02:44" hostname="Georges-MBP" time="0.114">
-  <properties/>
-  <testcase name="testIReturnAValidResultWhenQueried" classname="database.PropertySalesDatabaseTest" time="0.114"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

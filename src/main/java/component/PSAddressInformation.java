@@ -90,6 +90,14 @@ public class PSAddressInformation {
 		}
 		noPropertySelectedLabel.setVisible(isVisible);
 	}
+	
+	public void resetAddressInformation() {
+		for (JComponent component : components) {
+			((JLabel) component).setText("");
+		}
+		noPropertySelectedLabel.setText("No property selected.");
+		noPropertySelectedLabel.setVisible(true);
+	}
 
 	private String getFormattedBuildType(boolean isNewBuild) {
 		return isNewBuild ? "New build" : "Old build";

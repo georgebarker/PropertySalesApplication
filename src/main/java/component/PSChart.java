@@ -53,7 +53,6 @@ public class PSChart {
 		
 		}
 		dataset.addSeries(series);
-
 		return dataset;
 	}
 
@@ -70,7 +69,7 @@ public class PSChart {
 		XYPlot plot = chart.getXYPlot();
 		plot.setDataset(1, xyDataset);
 		
-		XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer(true, false);
+		XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer(true, true);
 		renderer.setSeriesPaint(0, Color.YELLOW);
 		plot.setRenderer(1, renderer);
 	}

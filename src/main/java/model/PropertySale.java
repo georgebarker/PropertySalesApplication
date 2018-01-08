@@ -4,7 +4,6 @@ import org.joda.money.Money;
 import org.joda.time.DateTime;
 
 public class PropertySale {
-    private String id;
     private Money price;
     private DateTime saleDate;
     private String postcode;
@@ -18,16 +17,6 @@ public class PropertySale {
     private String town;
     private String district;
     private String county;
-    private PPDCategoryType category;
-    private RecordStatus status;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public Money getPrice() {
         return price;
@@ -131,21 +120,5 @@ public class PropertySale {
 
     public void setCounty(String county) {
         this.county = county;
-    }
-
-    public PPDCategoryType getCategory() {
-        return category;
-    }
-
-    public void setCategory(PPDCategoryType category) {
-        this.category = category;
-    }
-
-    public RecordStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus(RecordStatus status) {
-        this.status = status;
     }
 }

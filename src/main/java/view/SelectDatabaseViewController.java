@@ -2,7 +2,10 @@ package view;
 
 import java.awt.Color;
 import java.awt.Rectangle;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyListener;
 import java.util.ArrayList;
+import java.util.EventListener;
 import java.util.List;
 
 import javax.swing.JButton;
@@ -40,8 +43,9 @@ public class SelectDatabaseViewController {
 		// setup Open Database button
 		JButton buttonOpenDatabase = new PSButton("Open database file...",
 				new Rectangle(112, 20, 175, 25));
-		buttonOpenDatabase.addActionListener(
-				new OpenDatabaseButtonClickedListener(fileChooser, invalidLabel));
+		EventListener listener = new OpenDatabaseButtonClickedListener(fileChooser, invalidLabel);
+		buttonOpenDatabase.addActionListener((ActionListener) listener);
+		buttonOpenDatabase.addKeyListener((KeyListener) listener);
 
 		components.add(invalidLabel);
 		components.add(buttonOpenDatabase);

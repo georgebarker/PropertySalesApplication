@@ -24,6 +24,5 @@ public class PSTable extends JTable {
 			columnModel.getColumn(columnModel.getColumnIndex("Price")).setMaxWidth(115);
 			columnModel.getColumn(columnModel.getColumnIndex("Date")).setMaxWidth(135);
 			columnModel.getColumn(columnModel.getColumnIndex("Postcode")).setMaxWidth(85);
-		
 	}
 }

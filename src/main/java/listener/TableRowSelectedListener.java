@@ -1,5 +1,6 @@
 package listener;
 
+import javax.swing.JButton;
 import javax.swing.JTable;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
@@ -12,10 +13,12 @@ public class TableRowSelectedListener implements ListSelectionListener {
 
 	private JTable table;
 	private PSAddressInformation addressInformation;
+	private JButton viewMapImageButton;
 	
-	public TableRowSelectedListener(JTable table, PSAddressInformation addressInformation) {
+	public TableRowSelectedListener(JTable table, PSAddressInformation addressInformation, JButton viewMapImageButton) {
 		this.table = table;
 		this.addressInformation = addressInformation;
+		this.viewMapImageButton = viewMapImageButton;
 	}
 
 	@Override
@@ -27,6 +30,7 @@ public class TableRowSelectedListener implements ListSelectionListener {
 			int selectedRowIndex = table.convertRowIndexToModel(selectedRow);
 			PropertySale propertySale = model.getModelFromRow(selectedRowIndex);
 			addressInformation.setAddressInformation(propertySale);
+			viewMapImageButton.setVisible(true);
 		} else {
 			addressInformation.setNoPropertySelectedLabelVisibility(true);
 		}

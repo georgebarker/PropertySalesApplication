@@ -13,9 +13,9 @@ import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 import org.jfree.data.function.LineFunction2D;
 import org.jfree.data.general.DatasetUtilities;
 import org.jfree.data.statistics.Regression;
+import org.jfree.data.time.Day;
 import org.jfree.data.time.TimeSeries;
 import org.jfree.data.time.TimeSeriesCollection;
-import org.jfree.data.time.Year;
 import org.jfree.data.xy.XYDataset;
 
 import model.PropertySale;
@@ -48,11 +48,12 @@ public class PSChart {
 		TimeSeriesCollection dataset = new TimeSeriesCollection();
 		TimeSeries series = new TimeSeries("One sale");
 		for (PropertySale propertySale : propertySales) {
-			series.addOrUpdate(new Year(propertySale.getSaleDate().getYear()),
+			series.addOrUpdate(new Day(propertySale.getSaleDate().toDate()),
 					propertySale.getPrice().getAmount());
 		
 		}
 		dataset.addSeries(series);
+
 		return dataset;
 	}
 

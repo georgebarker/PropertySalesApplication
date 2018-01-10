@@ -63,9 +63,11 @@ public class PostcodeSearchButtonClickedListener implements ActionListener, KeyL
 		if (!text.isEmpty()) {
 			addressInformation.resetAddressInformation();
 			List<PropertySale> propertySales = dao.getPropertySalesByPostcode(text, filterOutNewBuild);
-			model.updateModel(propertySales);
-			model.fireTableDataChanged();
-			chart.updateDataset(propertySales);
+			if (!propertySales.isEmpty()) {
+				model.updateModel(propertySales);
+				model.fireTableDataChanged();
+				chart.updateDataset(propertySales);
+			}
 		}
 	}
 }

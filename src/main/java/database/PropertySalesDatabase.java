@@ -28,7 +28,7 @@ public class PropertySalesDatabase {
 		if (connection != null) {
 			try {
 				PreparedStatement statement = connection.prepareStatement(query);
-				statement.setString(1, "%" + postcode + "%");
+				statement.setString(1, postcode + "%");
 				return statement.executeQuery();
 			} catch (SQLException e) {
 				System.err.println("Issue with query.");

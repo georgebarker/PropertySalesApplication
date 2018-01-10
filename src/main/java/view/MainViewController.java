@@ -25,6 +25,7 @@ import component.PSTableModel;
 import dao.PropertySalesDao;
 import listener.PostcodeSearchButtonClickedListener;
 import listener.TableRowSelectedListener;
+import listener.ViewMapImageButtonClickedListener;
 
 public class MainViewController {
 
@@ -51,9 +52,12 @@ public class MainViewController {
 		PSChart chart = new PSChart(new Rectangle(10, 250, 475, 270));
 		JCheckBox checkBox = new PSCheckBox("Filter out new build properties?", new Rectangle(180, 48, 250, 20));
 		
+		JButton viewMapImageButton = new PSButton("View street view & map", new Rectangle(250, 215, 170, 20));
+		viewMapImageButton.addActionListener(new ViewMapImageButtonClickedListener(table));
+		viewMapImageButton.setVisible(false);
 
 		table.getSelectionModel()
-				.addListSelectionListener(new TableRowSelectedListener(table, addressInformation));
+				.addListSelectionListener(new TableRowSelectedListener(table, addressInformation, viewMapImageButton));
 
 		// setup search field & buttons
 		JTextField textField = new JTextField();
@@ -61,14 +65,16 @@ public class MainViewController {
 				chart, addressInformation, checkBox);
 		textField.addKeyListener((KeyListener) listener);
 		textField.setBounds(new Rectangle(180, 22, 150, 20));
-		JButton button = new PSButton("Search", new Rectangle(340, 22, 100, 20));
 		
-		button.addActionListener((ActionListener) listener);
+		JButton searchButton = new PSButton("Search", new Rectangle(340, 22, 100, 20));
+		searchButton.addActionListener((ActionListener) listener);
+		
 		components.addAll(addressInformation.getComponents());
 		components.add(checkBox);
 		components.add(chart.getChartPanel());
 		components.add(textField);
-		components.add(button);
+		components.add(searchButton);
+		components.add(viewMapImageButton);
 		components.add(scrollPane);
 		return components;
 	}

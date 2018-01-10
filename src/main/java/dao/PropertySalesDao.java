@@ -20,9 +20,9 @@ public class PropertySalesDao {
 	private static final String PRICE_COLUMN = "price";
 	private static final String SALE_DATE_COLUMN = "sale_date";
 	private static final String POSTCODE_COLUMN = "postcode";
-	private static final String PROPERTY_TYPE_COLUMN = "property_type";
-	private static final String NEW_BUILD_COLUMN = "new_build";
-	private static final String PROPERTY_LEASE_TYPE_COLUMN = "lease_type";
+	private static final String PROPERTY_TYPE_COLUMN = "prop_type";
+	private static final String NEW_BUILD_COLUMN = "newbuild";
+	private static final String PROPERTY_LEASE_TYPE_COLUMN = "leasetype";
 	private static final String PAON_COLUMN = "paon";
 	private static final String SAON_COLUMN = "saon";
 	private static final String STREET_COLUMN = "street";
@@ -31,7 +31,7 @@ public class PropertySalesDao {
 	private static final String DISTRICT_COLUMN = "district";
 	private static final String COUNTY_COLUMN = "county";
 	private static final String FIND_BY_POSTCODE_QUERY = "SELECT * FROM sales WHERE postcode LIKE ?;";
-	private static final String FIND_BY_POSTCODE_QUERY_FILTER_NEW_BUILD = "SELECT * FROM sales WHERE postcode LIKE ? AND new_build = 'N';";
+	private static final String FIND_BY_POSTCODE_QUERY_FILTER_NEW_BUILD = "SELECT * FROM sales WHERE postcode LIKE ? AND newbuild = 'N';";
 	private static final DateTimeFormatter FORMATTER = DateTimeFormat
 			.forPattern("yyyy-MM-dd HH:mm");
 

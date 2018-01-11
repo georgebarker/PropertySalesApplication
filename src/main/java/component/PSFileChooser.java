@@ -7,6 +7,7 @@ public class PSFileChooser extends JFileChooser {
 	public PSFileChooser() {
 		super();
 		setAcceptAllFileFilterUsed(false);
-		setFileFilter(new FileNameExtensionFilter("SQLite Databases", "db", "sqlite", "sqlite3", "db3"));
+		setFileFilter(new FileNameExtensionFilter("SQLite Databases (*.db, *.sqlite, *.sqlite3, *.db3)", "db", "sqlite",
+				"sqlite3", "db3"));
 	}
 }
